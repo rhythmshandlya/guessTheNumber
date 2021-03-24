@@ -1,0 +1,110 @@
+body {
+  font-family: "Press Start 2P", cursive;
+  color: whitesmoke;
+  background-color: black;
+}
+
+nav {
+  margin: 1em 1em 0.5em 0.5em;
+  display: flex;
+  justify-content: space-between;
+}
+nav button {
+  font-size: 1em;
+  font-family: "Press Start 2P", cursive;
+  padding: 1.5%;
+  border-radius: 5px;
+}
+nav p {
+  font-size: 0.6em;
+  display: inline-block;
+  margin-top: 2.5%;
+}
+
+h1 {
+  text-align: center;
+  margin: 1em 0.5em 2em 0.5em;
+}
+#rule {
+  background-color: whitesmoke;
+  height: 4px;
+  width: 100%;
+  margin-bottom: 10%;
+}
+#rule::before {
+  content: "?";
+  padding: 2%;
+  font-size: 50px;
+  color: black;
+  background-color: whitesmoke;
+  position: relative;
+  left: 44%;
+  bottom: 22px;
+}
+#container {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  flex-wrap: nowrap;
+}
+#inp {
+  margin-left: 5%;
+  flex: 1;
+  margin-top: 2%;
+}
+#inp input {
+  font-family: cursive;
+  font-size: 90px;
+  width: 100%;
+  background-color: inherit;
+  color: whitesmoke;
+  border-color: whitesmoke;
+  border-width: 3px;
+  border-style: solid;
+}
+#inp button {
+  margin-top: 5%;
+  width: 100%;
+  font-size: 1.5rem;
+  font-family: "Press Start 2P", cursive;
+  padding: 2%;
+  border-radius: 5px;
+}
+#output {
+  flex: 2;
+  margin-left: 20%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+#output #highOrLow {
+  margin: 5% 0 0 0;
+  flex: 5;
+}
+#output #score {
+  margin: 0;
+  flex: 3;
+}
+#output #highScore {
+  flex: 3;
+  margin: 0;
+}
+.space {
+  flex: 1;
+}
+
+@media only screen and (max-width: 450px) {
+  #container {
+    flex-direction: column;
+  }
+  #inp {
+    margin-bottom: 4%;
+  }
+  #output {
+    margin-top: 5%;
+  }
+  .space {
+    flex: 1;
+  }
+}
